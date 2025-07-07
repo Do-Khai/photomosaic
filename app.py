@@ -6,7 +6,7 @@ from photomosaic import generate_photomosaic
 st.title("📸 Photomosaic")
 
 input_img = st.file_uploader("Em upload ảnh gốc ở đây nhé", type=["jpg", "jpeg", "png"])
-pool_imgs = st.file_uploader("Em upload ảnh con ở đây nhé, em có bấm Upload rồi bôi đen kéo thả nhé", type=["jpg", "jpeg", "png"], accept_multiple_files=True)
+pool_imgs = st.file_uploader("Em upload ảnh con ở đây nhé, em có thể bấm Browse Files rồi bôi đen kéo thả vô nhé", type=["jpg", "jpeg", "png"], accept_multiple_files=True)
 cell_size = st.slider("Em chọn kích cỡ ảnh của mỗi ảnh con trong ảnh gốc nhé", min_value=5, max_value=1000, value=25)
 
 if st.button("Em bấm vào đây để tạo ảnh nè"):
